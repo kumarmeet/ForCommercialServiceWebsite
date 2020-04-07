@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono:500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto Mono", monospace;
+  background: #3d3a42 !important;
+}
+
+.top-design {
+  position: absolute;
+  background: #801336;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 34%, 0 74%);
+}
+
+.heading {
+  /* border: 2px solid black; */
+  padding-top: 30px;
+  color: white;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-logo {
+  vertical-align: middle;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading .brand {
+  height: 2.5rem;
+  width: 10%;
+}
+
+.heading .brand .logo img {
+  height: 100%;
+}
+
+.nav-bar {
+  text-align: right;
+  width: 87%;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.nav-bar ul li a {
+  color: #f1942a;
+  padding: 5px 12px;
+  text-decoration: none;
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a:active {
+  background: #3d3a42;
+  color: #e0dbdb;
+  transition: ease-in-out 300ms;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  color: #ffb1aeed;
+}
+
+.content h1 {
+  font-family: "Inconsolata", monospace;
+  font-size: 2.5rem;
+  padding-bottom: 3.2rem;
+  text-shadow: 2px 2px 2px #0a0a0a;
+}
+
+.content p {
+  max-width: 80%;
+  text-align: justify;
+}
+
+.content .onsite {
+  color: #a8e6cf;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.for-img {
+  height: 100vh;
+  margin-top: 7.7rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr) auto;
+  grid-gap: 3rem 9rem;
+}
+
+.for-img .one,
+.for-img .three {
+  justify-self: flex-end;
+}
+
+.for-img .two,
+.for-img .four {
+  justify-self: flex-start;
+}
+
+.for-img .five {
+  grid-column: span 2;
+  margin-bottom: 10rem;
+}
+
+.for-img section a {
+  box-shadow: 0px 15px 10px -15px #866261;
+  margin: 2rem 3.5rem;
+  padding: 6rem 8rem;
+  display: inline-block;
+}
+
+.for-img .one .img1 {
+  background: no-repeat
+    url("https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")
+    center/100%;
+}
+
+.for-img .two .img2 {
+  background: no-repeat
+    url("https://images.unsplash.com/photo-1577648188599-291bb8b831c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")
+    center/100%;
+}
+.for-img .three .img3 {
+  background: no-repeat
+    url("https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")
+    center/ 100% 90%;
+}
+.for-img .four .img4 {
+  background: no-repeat
+    url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")
+    center/100%;
+}
+.for-img .five .img5 {
+  background: no-repeat
+    url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")
+    center/100%;
+}
+
+.for-img section h3 {
+  color: #eeeeeeed;
+  font-family: "Baloo Da 2", cursive;
+  font-size: 0.9rem;
+  margin: -1.6rem;
+}
+
+.img1:hover,
+.img1:active,
+.img2:hover,
+.img2:active,
+.img3:hover,
+.img3:active,
+.img4:hover,
+.img4:active,
+.img5:hover,
+.img5:active {
+  box-shadow: none;
+  transition: ease-in-out 200ms;
+}
+
+#carouselExampleControls {
+  width: 40vw;
+  margin: 20rem auto 0 auto;
+}
+
+#carouselExampleControls .carousel-inner {
+  border-radius: 8px;
+}
+
+.bottom-bottom__design {
+  width: 100vw;
+  height: 75%;
+  background: #801336;
+  clip-path: polygon(0 73%, 100% 34%, 100% 100%, 0% 100%);
+}
+
+.bottom-bottom__design {
+  position: relative;
+  z-index: -1;
+}
+
+.social-links ul {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links ul a {
+  margin: 0 1rem;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
